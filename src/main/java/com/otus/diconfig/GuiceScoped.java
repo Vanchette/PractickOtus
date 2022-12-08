@@ -1,6 +1,5 @@
 package com.otus.diconfig;
 
-import com.otus.driver.DriverFactory;
 import io.cucumber.guice.ScenarioScoped;
 import org.openqa.selenium.WebDriver;
 

@@ -23,6 +23,9 @@
         <browser>chrome</browser>
         <webdriver.base.url>https://otus.ru</webdriver.base.url>
         <webdriver.timeouts.implicitlywait>5000</webdriver.timeouts.implicitlywait>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <dependencies>

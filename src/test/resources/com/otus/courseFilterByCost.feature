@@ -1,4 +1,5 @@
-#language: ru
+# encoding: UTF-8
+# language: ru
 
 Функционал: Проверка меню в заголовке страницы
 

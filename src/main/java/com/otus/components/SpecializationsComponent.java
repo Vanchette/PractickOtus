@@ -47,7 +47,7 @@ public class SpecializationsComponent extends AbsComponent<SpecializationsCompon
 
     standartWaiter.waitForCondition(ExpectedConditions.stalenessOf(courseItem));
     courseItem.click();
-//    return page(LessonsPage.class);
+    //    return page(LessonsPage.class);
   }
 
   public void startDateShouldBeEqualOrMore(String strDate) {
@@ -74,10 +74,7 @@ public class SpecializationsComponent extends AbsComponent<SpecializationsCompon
 
   public Boolean dateEqualOrMore(WebElement webElement, Date date) {
     Date dateWebElement = getDateFromString(getStringDateFromWebElement(webElement));
-    if (date.equals(dateWebElement) || date.before(dateWebElement)) {
-      return true;
-    }
-    return false;
+    return date.equals(dateWebElement) || date.before(dateWebElement);
   }
 
   public LessonsPage clickCoursesItemByMinDate() {

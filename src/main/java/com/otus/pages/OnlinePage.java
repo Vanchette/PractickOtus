@@ -16,19 +16,16 @@ import java.util.regex.Pattern;
 @UrlPrefix("/online")
 public class OnlinePage extends AbsBasePage<OnlinePage> {
 
+  String regCost = "[0-9]*";
+  Pattern pattern = Pattern.compile(regCost, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
+  @FindBy(tagName = "h1")
+  private WebElement headTitle;
+  @FindBy(css = ".lessons>.lessons__new-item .lessons__new-item-container")
+  private List<WebElement> videoCourses;
   @Inject
   public OnlinePage(GuiceScoped guiceScoped) {
     super(guiceScoped);
   }
-
-  @FindBy(tagName = "h1")
-  private WebElement headTitle;
-
-
-  String regCost = "[0-9]*";
-  Pattern pattern = Pattern.compile(regCost, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
-  @FindBy(css = ".lessons>.lessons__new-item .lessons__new-item-container")
-  private List<WebElement> videoCourses;
 
   public void theCheapestCourse() {
 

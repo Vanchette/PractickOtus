@@ -2,8 +2,6 @@ package com.otus.driver;
 
 import com.otus.driver.impl.ChromeWebDriver;
 import com.otus.exceptions.DriverTypeNoteSupported;
-import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.util.Locale;

@@ -13,7 +13,7 @@ public class CommonPageSteps {
   private GuiceScoped guiceScoped;
 
   @Пусть("Открываем браузер {string}")
-  public void setGuiceScoped(String browser){
+  public void setGuiceScoped(String browser) {
     guiceScoped.browserName = browser;
     guiceScoped.driver = driverFactory.getDriver();
   }

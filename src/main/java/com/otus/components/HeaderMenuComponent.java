@@ -11,13 +11,12 @@ import org.openqa.selenium.WebElement;
 @Component("//*[contains(@class, 'header2-menu_main')]")
 public class HeaderMenuComponent extends AbsComponent<HeaderMenuComponent> {
 
+  private final String menuItemLocator = baseLocator + "//*[contains(@class, 'header2-menu__item_dropdown')][.//*[contains(@class, 'header2-menu__item')][text()='%s']]";
+  private final String menuItemDropdownListLocator = menuItemLocator + "//*[@class='header2-menu__dropdown']";
   @Inject
   public HeaderMenuComponent(GuiceScoped guiceScoped) {
     super(guiceScoped);
   }
-
-  private String menuItemLocator = baseLocator + "//*[contains(@class, 'header2-menu__item_dropdown')][.//*[contains(@class, 'header2-menu__item')][text()='%s']]";
-  private String menuItemDropdownListLocator = menuItemLocator + "//*[@class='header2-menu__dropdown']";
 
   public HeaderMenuComponent moveToMenuItem(ItemData itemData) {
     WebElement menuItemElement = driver.findElement(By.xpath(String.format(menuItemLocator, itemData.getName())));

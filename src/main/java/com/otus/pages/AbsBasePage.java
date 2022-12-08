@@ -27,6 +27,14 @@ public abstract class AbsBasePage<T> extends CommonActions<T> {
     super(guiceScoped);
   }
 
+  public static <T> T convertInstanceOfObject(Object o, Class<T> clazz) {
+    try {
+      return clazz.cast(o);
+    } catch (ClassCastException e) {
+      return null;
+    }
+  }
+
   public void titleShouldBeSameAs(String title) {
 
     assertThat(header.getText().toLowerCase(Locale.ROOT).trim())
@@ -36,14 +44,6 @@ public abstract class AbsBasePage<T> extends CommonActions<T> {
 
   public String getPageTitle() {
     return driver.getTitle();
-  }
-
-  public static <T> T convertInstanceOfObject(Object o, Class<T> clazz) {
-    try {
-      return clazz.cast(o);
-    } catch (ClassCastException e) {
-      return null;
-    }
   }
 
   public T pageHeaderShouldBeSameAs(String checkHeader) {

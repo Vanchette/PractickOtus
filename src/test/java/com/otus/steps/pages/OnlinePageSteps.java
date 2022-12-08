@@ -16,12 +16,12 @@ public class OnlinePageSteps {
   }
 
   @Пусть("Выведем в консоль самый дорогой курс")
-  public void printMostExpensiveCourse(){
+  public void printMostExpensiveCourse() {
     onlinePage.mostExpensiveCourse();
   }
 
   @Пусть("Выведем в консоль самый дешевый курс")
-  public void printTheCheapestCourse(){
+  public void printTheCheapestCourse() {
     onlinePage.theCheapestCourse();
   }
 }
