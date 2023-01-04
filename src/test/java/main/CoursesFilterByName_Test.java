@@ -14,7 +14,7 @@ public class CoursesFilterByName_Test {
   @Driver
   private WebDriver driver;
 
-  String findNameCourse = "Специализация iOS Developer";
+  private final String findNameCourse = "Специализация iOS Developer";
 
   @Test
   public void clickCourseItem() {

@@ -21,6 +21,7 @@ public class ChromeWebDriver implements IDriver {
     chromeOptions.addArguments("--enable-extensions");
     chromeOptions.addArguments("--homepage=about:blank");
     chromeOptions.addArguments("--ignore-certificate-errors");
+    chromeOptions.addArguments("start-maximized");
     chromeOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
     chromeOptions.setCapability(CapabilityType.VERSION, System.getProperty("browser.version", ""));
     chromeOptions.setCapability(CapabilityType.BROWSER_NAME, System.getProperty("browser", "chrome"));
