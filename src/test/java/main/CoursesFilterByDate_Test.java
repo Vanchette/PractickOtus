@@ -13,7 +13,7 @@ import pages.MainPage;
 public class CoursesFilterByDate_Test {
 
   @Driver
-  WebDriver driver;
+  private WebDriver driver;
 
   @Test
   public void clickCourseFilterByMinDate(){

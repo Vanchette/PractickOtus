@@ -1,0 +1,12 @@
+{
+  "uuid": "d36f80cc-cdd7-44c0-a619-88c8faf477c6",
+  "name": "CoursesTile_Test",
+  "children": [
+    "7dc6620e-8647-4d2c-83ef-6833116c091b"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1664635269865,
+  "stop": 1664635289645
+}

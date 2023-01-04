@@ -21,8 +21,8 @@ public class SpecializationsComponent extends AbsComponent<SpecializationsCompon
   @FindBy(css = ".container.container-lessons>.container-padding-bottom>.lessons>.lessons__new-item .lessons__new-item-container")
   private List<WebElement> courses;
 
-  String regDate = "(0?[1-9]|[12][0-9]|3[01]) (янв(?:аря)?|фев(?:раля)?|мар(?:та)?|апр(?:еля)?|мая|июн(?:я)?|июл(?:я)?|авг(?:уста)?|сен(?:тября)?|окт(?:ября)?|ноя(?:бря)?|дек(?:абря)?)";
-  Pattern pattern = Pattern.compile(regDate, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
+  private String regDate = "(0?[1-9]|[12][0-9]|3[01]) (янв(?:аря)?|фев(?:раля)?|мар(?:та)?|апр(?:еля)?|мая|июн(?:я)?|июл(?:я)?|авг(?:уста)?|сен(?:тября)?|окт(?:ября)?|ноя(?:бря)?|дек(?:абря)?)";
+  private Pattern pattern = Pattern.compile(regDate, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
 
   public SpecializationsComponent(WebDriver driver) {
     super(driver);

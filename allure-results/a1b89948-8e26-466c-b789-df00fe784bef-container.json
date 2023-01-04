@@ -1,0 +1,12 @@
+{
+  "uuid": "a1b89948-8e26-466c-b789-df00fe784bef",
+  "name": "clickCourseItem()",
+  "children": [
+    "7dc6620e-8647-4d2c-83ef-6833116c091b"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1664635272280,
+  "stop": 1664635289633
+}
