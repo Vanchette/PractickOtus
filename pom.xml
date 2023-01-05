@@ -15,6 +15,7 @@
         <webdriver.manager.version>4.2.0</webdriver.manager.version>
         <junit.version>5.8.1</junit.version>
         <assertj.version>3.22.0</assertj.version>
+        <allure>2.14.0</allure>
         <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
 
@@ -68,6 +69,11 @@
             <version>${assertj.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>${allure}</version>
+        </dependency>
 
     </dependencies>
 
